@@ -21,11 +21,11 @@ npm install
 
 1. Десктопная версия
 ```
-webpack serve --env port=5173 mode=development --env platform=desktop
+npx webpack serve --env port=5173 mode=development --env platform=desktop
 ```
 
 2. Мобильная версия
 ```
-webpack serve --env port=5173 mode=development --env platform=mobile
+npx webpack serve --env port=5173 mode=development --env platform=mobile
 ```
 
