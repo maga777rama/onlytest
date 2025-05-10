@@ -1,0 +1,1 @@
+export { CurrentIntervalProvider } from "./CurrentIntervalProvider";

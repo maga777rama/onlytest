@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    position: absolute;
+
+    top: 400px;
+    left: 217px;
+    width: 973px;
+    height: 160px;
+    font-size: 200px;
+    line-height: 160px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    letter-spacing: -2%;
+
+    @if $PLATFORM == "mobile" {
+        width: 273px;
+        height: 73px;
+        top: 163px;
+        left: 20px;
+        font-size: 56px;
+        line-height: 100%;
+    }
+
+    &__start {
+        color: #5d5fef;
+        margin-right: auto;
+        @if $PLATFORM == "mobile" {
+            color: #3877ee;
+        }
+    }
+
+    &__end {
+        color: #ef5da8;
+    }
+}

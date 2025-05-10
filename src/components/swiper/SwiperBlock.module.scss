@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+.container {
+    position: absolute;
+    top: 841px;
+    width: 1280px;
+    margin: 0 80px;
+    @if $PLATFORM == "mobile" {
+        width: 280px;
+        top: 313px;
+        margin: 0 20px;
+    }
+    //border: 1px solid black;
+}
+.item {
+    width: 400px;
+    height: 135px;
+    font-weight: 400;
+    letter-spacing: 0;
+    user-select: none;
+    //border: 1px solid black;
+
+    @if $PLATFORM == "mobile" {
+        width: 166px;
+        height: 255px;
+        //height: 114px;
+    }
+
+    h2 {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 25px;
+        line-height: 120%;
+        color: #3877ee;
+        margin: 0 0 15px 0;
+        @if $PLATFORM == "mobile" {
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+
+    p {
+        font-family: "PT Sans", sans-serif;
+        font-size: 20px;
+        line-height: 30px;
+        color: #42567a;
+        margin: 0;
+        @if $PLATFORM == "mobile" {
+            font-size: 14px;
+            line-height: 145%;
+        }
+    }
+}
+.navButton {
+    position: absolute;
+    top: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 10;
+    background: white;
+    box-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.05),
+        0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.prev {
+    left: 10px;
+    transform: scaleX(-1);
+}
+
+.next {
+    right: 10px;
+}
+
+.hidden {
+    display: none;
+}
